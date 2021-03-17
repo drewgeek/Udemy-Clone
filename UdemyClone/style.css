@@ -1,0 +1,366 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  /* header{
+      border: thin solid rgb(145, 65, 65);
+  } */
+  .navbar1{
+      display: flex;
+      justify-content: space-between;
+      width: 98%;
+      margin: 0 auto;
+      padding: 10px 0px;
+  }
+  .navbar2{
+    display: flex;
+    justify-content: space-between;
+    /* width: 90%;
+    margin: 0 auto; */
+    padding: 20px 0px;
+    border-top: thin solid #DCDACB;
+    background-color: #FBFBF8;
+    box-shadow: 0px 3px 3px #E8E8E8;
+    position: relative;
+  }
+.navbar2 > ul{
+    width: 75%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+    color: #3C3B37;
+}
+  ul{
+      list-style: none;
+      display: flex;
+      align-items: center;
+  }
+
+  .nav-top, .nav-bottom{
+      padding: 0 10px;
+      font-size: 14px;
+  }
+
+  .search-bar{
+      /* flex: 1; */
+      border: 1px solid #797667  ;
+      border-radius: 50px;
+      width: 800px;
+      max-width: 900px;
+      display: flex;
+      align-items: center;
+      height: 40px;
+      background-color: #FBFBF8;
+  }
+  .search-bar i{
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    color:#73726C;
+}
+  .search-input{
+      border: none;
+      outline: none;
+      background: none;
+      flex: 1;
+     /* padding: 0 10px;  */
+      padding-right: 20px;
+  }
+  .company-logo{
+      width: 100px;
+}
+  .icon a{
+    padding-left: 20px;
+  }
+
+.profile{
+    /* margin: 10px; */
+    border-radius: 50%;
+    /* padding: 5px 5px;  */
+    background-color: #F0BD4F   ;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    /* line-height: 1.6; */
+    padding: 3px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.profile a{
+    color: white;
+}
+.sectionA{
+    position: relative;
+    max-width: 100%;
+    width: 1200px;
+    margin: auto;
+}
+.text{
+    font-size: 17px;
+    color: #3c3b37;
+    background-color: #FFF;
+    position: absolute;
+    z-index: 7;
+    top: 50;
+    left: 60;
+    width: 400px;
+    padding: 30px 15px;
+    box-shadow: 0px 2px 2px #DCDDE1;
+}
+
+.sectionA .picture1 img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.section2A{
+    display: flex;
+    justify-content: space-between;
+    width: 1150px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.learning{
+    color: #0F7C90;
+    font-weight: bold;
+}
+
+.mycourses{
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    height: 120px;
+    margin: auto;
+}
+
+.outer-box{
+    width: 650px;
+    height: 150px;
+    display: flex;
+    border: 2px solid #DCDACB;
+    margin: 5px;  
+}
+
+.inner-box{
+    width: 120px;
+    height: 150px;
+    position: absolute;
+}
+
+.inner-box img{
+    width: 100px;
+    height: 150px;
+    position: relative;
+    top: -3;
+    left: -3;
+}
+
+.title{
+    color: #73726C;
+    /* margin-bottom: 15px; */
+}
+
+.description{
+    color: #3C3B37;
+    /* margin-top: 30px; */
+}
+
+.inner-box-bot{
+    font-weight: bold;
+    color: #73726C;
+    /* margin-top: 20px; */
+}
+
+.title, .description, .inner-box-bot{
+    margin-left: 115px;
+    margin-top: 20px;
+}
+.sectionc{
+    background-color: #003640;
+    width: 1110px;
+    margin: auto;
+    height: 80px;
+    margin-top: 50px;
+    position: relative;
+    background-image: url("https://s.udemycdn.com/browse_components/shared-assets/purple-intersect.svg");
+    background-size: contain;
+}
+
+.training{
+    font-size: 17px;
+    color: #fff;
+    position: absolute;
+    /* z-index: 7; */
+    top: 30;
+    left: 20;
+    /* width: 400px;
+    padding: 30px 15px; */
+
+}
+
+.get-biz-btn{
+    background-color: #0F7C90;
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    top: 1;
+    left: 840;
+    position: relative;
+    padding: 5px 10px;
+    margin: 30px 0;
+}
+.dismiss-btn{
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #003640;
+    border-radius: 2px;
+    top: 1;
+    left: 845;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.sectiond{
+    width: 1150px;
+    margin: auto;
+    height: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    position: relative;
+    /* height: fit-content; */
+}
+.card-overlay{
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    top: 0;
+    right: -105%;
+    background-color: grey;
+    z-index: 5;
+    visibility: hidden;
+    transition: 0.5s;
+    padding: 10px;
+    display: flex;
+}
+.card:hover .card-overlay{
+    visibility: visible;
+
+}
+
+.card img{
+    width: 250px;
+    height: 150px;
+}
+.container{
+    width: 250px;
+}
+.star{
+    color: #EB8A2F;
+}
+.delAmount{
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+.drop-down a{
+    position:relative;
+
+}
+
+.drop-menu{
+    position: absolute;
+    bottom: -30px;
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    transition: .3s;
+    width: 100%;
+    left: 0;
+    height: 40px;
+    z-index: 100;
+}
+
+.drop-menu a{
+    color: #fff;
+}
+
+.drop-menu ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    z-index: 2;
+    justify-content: space-between;
+}
+
+.indicator{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 22;
+    left: 0;
+    /* background: red; */
+    /* transform: translateY(-50%); */
+    z-index: 2;
+    visibility: hidden;
+
+
+}
+.indicator div{
+    width:100%;
+    height: 100%;
+    background: #000;
+    transform: rotate(45deg);
+}
+
+
+.drop-down:hover .drop-menu{
+    visibility: visible;
+}
+.drop-down:hover .indicator{
+    visibility: visible;
+}
+
+.button{
+    background-color: #FFE799;
+    border: none;
+    padding: 2px 7px;
+}
+
+.overlay-btn{
+    background-color: #99DBAA;
+    border-radius: 2px;
+}
+
+.overlay-down{
+    display: flex;
+}
+
+.add-cart-btn{
+    width: 200px;
+    height: 45px;
+    margin-bottom: 20px;
+    background-color: #FF9999;
+    color: #fff;
+    border-radius: 2px;
+}
+.choice-item{
+    background-color: white;
+    border-radius: 50px;
+    border: 2px solid grey;
+    width: 45px;
+    height:45px;
+    margin-top: 10px;
+    margin-left: 10px;
+}

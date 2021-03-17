@@ -1,0 +1,22 @@
+table, caption, tr, th, td{
+    font-family: verdana, sans-serif;
+    padding: 10px 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+.cap{
+    font-weight: bold;
+    background: #003640 ;
+    color: #fff;
+    
+}
+
+tr:nth-child(even){
+    background-color: #f1f1f1;
+}
+
+/* .paint-row{
+    background-color: #f1f1f1;
+} */
